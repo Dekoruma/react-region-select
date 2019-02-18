@@ -11,7 +11,7 @@ class RegionSelect extends Component {
 		this.onDocMouseTouchMove = this.onDocMouseTouchMove.bind(this);
 		this.onDocMouseTouchEnd = this.onDocMouseTouchEnd.bind(this);
 		this.onRegionMoveStart = this.onRegionMoveStart.bind(this);
-		this.regionCounter = 0;
+		this.regionCounter = props.regions[props.regions.length - 1].data.index + 1;
 	}
 	componentDidMount() {
 		document.addEventListener('mousemove', this.onDocMouseTouchMove);
